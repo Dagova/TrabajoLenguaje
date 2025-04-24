@@ -43,10 +43,7 @@ body {
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
   }
   
-  .caja:hover .descripcion {
-    background-color: #d7384a;
-  }
-  
+ 
   .caja img {
     width: 100%;
     height: 200px;
@@ -55,13 +52,12 @@ body {
   }
   
   .descripcion {
-    background-color: #e94a5a;
+    background-color: #4caf50;
     color: white;
     padding: 10px;
     text-align: center;
     font-size: 0.95rem;
     font-weight: 500;
-    border-top: 1px solid #cc1f3d;
     flex-grow: 1;
     width: 100%;
     box-sizing: border-box;
