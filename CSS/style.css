@@ -119,3 +119,144 @@ h2 {
   .items img:hover {
     transform: scale(1.1); /* efecto zoom al pasar el ratón */
   }
+
+  /* parte añadida de luis */
+  .galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 40px;
+    justify-items: center;
+  }
+  
+  .caja {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 220px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .caja:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+  .caja:hover .descripcion {
+    background-color: #d7384a;
+  }
+  
+  .caja img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .descripcion {
+    background-color: #e94a5a;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.95rem;
+    font-weight: 500;
+    border-top: 1px solid #cc1f3d;
+    flex-grow: 1;
+    width: 100%;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+  }
+  
+  @media (max-width: 900px) {
+    .galeria {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .galeria {
+      grid-template-columns: 1fr;
+    }
+  }
+  /* Footer */
+  .footer-nube {
+    background-color: #6c2b3f;
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
+    padding: 60px 20px;
+    margin-top: 60px;
+    box-shadow: 0 -15px 20px rgba(0,0,0,0.2), 0 -5px 30px rgba(0,0,0,0.1);
+    color: white;
+    position: relative;
+  }
+  
+  .footer-contenido {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .footer-seccion {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .footer-seccion h3 {
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+  }
+  
+  .footer-seccion ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-seccion ul li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-seccion a {
+    color: #ffe1e6;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  
+  .footer-seccion a:hover {
+    color: #ffffff;
+  }
+  
+  /* Estilos para la sección Sobre Nosotros */
+  .about-us {
+    padding: 40px;
+    background-color: #ffffff;
+    text-align: center;
+  }
+  
+  .about-us-box {
+    background-color: #fbeaec;
+    border-radius: 15px;
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-us h2 {
+    color: #6c2b3f;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .about-us p {
+    color: #333;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
