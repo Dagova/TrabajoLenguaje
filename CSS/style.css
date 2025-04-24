@@ -1,7 +1,7 @@
 body {
     margin: 0;
-    font-family: 'Playfair Display', sans-serif;
-        background-color: #fff8e7;
+    font-family: "Inter", sans-serif;
+    background-color: #fff8e7;
   }
   
   .nav {
@@ -35,7 +35,7 @@ body {
     text-decoration: none;
     color: #5d3a00;
     font-weight: bolder;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 1000;
     padding: 0.5rem 1rem;
     transition: color 0.3s ease, background-color 0.3s ease, border-radius 0.3s ease;
@@ -143,187 +143,31 @@ body {
     border: 2px solid #fff;
   }
 
-  .lineasrosas {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-  }
-  
-  .linea {
-  height: 15px;
-  width: 100%;
-}
-  
-.linea1 { background-color: rgb(139, 0, 47); } 
-.linea2 { background-color: rgb(166, 51, 87); }
-.linea3 { background-color: rgb(193, 102, 127); }
-.linea4 { background-color: rgb(220, 153, 167); }
-.linea5 { background-color: rgb(242, 200, 209); }
-.linea6 { background-color: rgb(252, 230, 235); }
-
 h2 {
     margin-left: 30px;
     font-size: 2rem;
-    margin-top: 3rem;
+    margin-top: 8rem;
     color: rgb(139, 0, 47); 
+    text-align: center;
+    font-size: 40px;
   }
   
   .items {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
-    padding: 2rem;
+    padding: 3rem;
+    justify-content: center;
   }
   
   .items img {
-    width: 15rem;
-    height: auto;
-    object-fit: contain;
-    border-radius: 8px;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
     transition: transform 0.3s ease;
   }
   
   .items img:hover {
     transform: scale(1.1); /* efecto zoom al pasar el ratón */
-  }
-
-  /* parte añadida de luis */
-  .galeria {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
-    padding: 40px;
-    justify-items: center;
-  }
-  
-  .caja {
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    width: 220px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .caja:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-  }
-  
-  .caja:hover .descripcion {
-    background-color: #d7384a;
-  }
-  
-  .caja img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    display: block;
-  }
-  
-  .descripcion {
-    background-color: #e94a5a;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    font-size: 0.95rem;
-    font-weight: 500;
-    border-top: 1px solid #cc1f3d;
-    flex-grow: 1;
-    width: 100%;
-    box-sizing: border-box;
-    transition: background-color 0.3s ease;
-  }
-  
-  @media (max-width: 900px) {
-    .galeria {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  
-  @media (max-width: 500px) {
-    .galeria {
-      grid-template-columns: 1fr;
-    }
-  }
-  /* Footer */
-  .footer-nube {
-    background-color: #6c2b3f;
-    border-top-left-radius: 150px;
-    border-top-right-radius: 150px;
-    padding: 60px 20px;
-    margin-top: 60px;
-    box-shadow: 0 -15px 20px rgba(0,0,0,0.2), 0 -5px 30px rgba(0,0,0,0.1);
-    color: white;
-    position: relative;
-  }
-  
-  .footer-contenido {
-    max-width: 1000px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 30px;
-  }
-  
-  .footer-seccion {
-    flex: 1;
-    min-width: 200px;
-  }
-  
-  .footer-seccion h3 {
-    color: #ffffff;
-    margin-bottom: 10px;
-    font-size: 1.2rem;
-  }
-  
-  .footer-seccion ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .footer-seccion ul li {
-    margin-bottom: 5px;
-  }
-  
-  .footer-seccion a {
-    color: #ffe1e6;
-    text-decoration: none;
-    transition: color 0.2s;
-  }
-  
-  .footer-seccion a:hover {
-    color: #ffffff;
-  }
-  
-  /* Estilos para la sección Sobre Nosotros */
-  .about-us {
-    padding: 40px;
-    background-color: #ffffff;
-    text-align: center;
-  }
-  
-  .about-us-box {
-    background-color: #fbeaec;
-    border-radius: 15px;
-    padding: 40px;
-    max-width: 800px;
-    margin: 0 auto;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .about-us h2 {
-    color: #6c2b3f;
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
-  
-  .about-us p {
-    color: #333;
-    font-size: 1.1rem;
-    line-height: 1.6;
   }
