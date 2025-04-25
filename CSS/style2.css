@@ -1,21 +1,76 @@
 body {
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #ffffff;
-    color: #333;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background-color: #fff8e7;
+  }
+
+  .nav {
+    position: absolute; 
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 2rem;
+    background: transparent;
+    transition: background-color 0.3s ease; /* transición para el cambio */
   }
   
-  header {
-    background-color: #cc1f3d;
-    color: white;
-    text-align: center;
-    padding: 1.5rem 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  .nav:hover {
+    background-color:  rgb(75, 31, 6);; /* se pone blanco cuando haces hover sobre el nav */
+    color : rgb(255, 255, 255); /* se pone blanco cuando haces hover sobre el nav */  
   }
   
-  h1 {
+  .nav ul {
+    list-style: none;
+    display: flex;
+    gap: 4rem;
     margin: 0;
+    padding: 0;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: #5d3a00;
+    font-weight: bolder;
+    font-size: 15px;
+    font-weight: 1000;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease, background-color 0.3s ease, border-radius 0.3s ease;
+  }
+
+  .nav:hover a {
+    color: #ffffff; /* o el color que quieras para texto general en hover del nav */
+  }
+
+  .nav a:hover {
+    background-color: rgb(139, 0, 47); /* Color del fondo en hover */
+    border-radius: 5px; /* Bordes redondeados */
+}
+  
+  .logo {
+    position: fixed;
+    right: 2rem;
+    top: 1rem;
+    width: 80px;
+    margin-top: 2.5rem;
+  }
+
+  .banner1 {
+    width: 100%;
+    height: 85vh;
+    background-color: #fff8e7;
+  }
+
+  h2 {
+    margin-left: 30px;
     font-size: 2rem;
+    margin-top: 5rem;
+    color: rgb(139, 0, 47); 
+    text-align: center;
+    font-size: 40px;
   }
   
   .galeria {

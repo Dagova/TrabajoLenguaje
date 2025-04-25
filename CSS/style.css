@@ -48,17 +48,18 @@ body {
   .nav:hover a {
     color: #ffffff; /* o el color que quieras para texto general en hover del nav */
   }
-  
-  .logo {
-     margin-top: 4rem;
-  }
-   
+
+  .nav a:hover {
+    background-color: rgb(139, 0, 47); /* Color del fondo en hover */
+    border-radius: 5px; /* Bordes redondeados */
+}
   
   .logo {
     position: fixed;
     right: 2rem;
     top: 1rem;
     width: 80px;
+    margin-top: 2.5rem;
   }
   
   .banner1 {
