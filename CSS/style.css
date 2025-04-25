@@ -1,7 +1,7 @@
 body {
     margin: 0;
-    font-family: 'Playfair Display', sans-serif;
-        background-color: #fff8e7;
+    font-family: "Inter", sans-serif;
+    background-color: #fff8e7;
   }
   
   .nav {
@@ -35,7 +35,7 @@ body {
     text-decoration: none;
     color: #5d3a00;
     font-weight: bolder;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 1000;
     padding: 0.5rem 1rem;
     transition: color 0.3s ease, background-color 0.3s ease, border-radius 0.3s ease;
@@ -147,22 +147,25 @@ body {
 h2 {
     margin-left: 30px;
     font-size: 2rem;
-    margin-top: 3rem;
+    margin-top: 8rem;
     color: rgb(139, 0, 47); 
+    text-align: center;
+    font-size: 40px;
   }
   
   .items {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
-    padding: 2rem;
+    padding: 3rem;
+    justify-content: center;
   }
   
   .items img {
-    width: 15rem;
-    height: auto;
-    object-fit: contain;
-    border-radius: 8px;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
     transition: transform 0.3s ease;
   }
   
