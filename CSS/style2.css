@@ -110,13 +110,10 @@ body {
   .cara-detras {
     background-color: rgb(139, 0, 47);
     color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     transform: rotateY(180deg);
     font-size: 1rem;
-    padding: 1rem;
     text-align: center;
+    padding-top: 40%;
   }
 
   .caja {
@@ -135,104 +132,21 @@ body {
     transform: translateY(-5px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
   }
-  
- 
-  .caja img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
-  
 
   
-  @media (max-width: 900px) {
-    .galeria {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
   
-  @media (max-width: 500px) {
-    .galeria {
-      grid-template-columns: 1fr;
-    }
-  }
-  /* Footer */
-  .footer-nube {
-    background-color: #6c2b3f;
-    border-top-left-radius: 150px;
-    border-top-right-radius: 150px;
-    padding: 60px 20px;
-    margin-top: 60px;
-    box-shadow: 0 -15px 20px rgba(0,0,0,0.2), 0 -5px 30px rgba(0,0,0,0.1);
-    color: white;
-    position: relative;
-  }
-  
-  .footer-contenido {
-    max-width: 1000px;
-    margin: 0 auto;
+  .items {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 2rem;
+    padding: 20rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    justify-content: center;
+    display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+
   }
   
-  .footer-seccion {
-    flex: 1;
-    min-width: 200px;
-  }
   
-  .footer-seccion h3 {
-    color: #ffffff;
-    margin-bottom: 10px;
-    font-size: 1.2rem;
-  }
-  
-  .footer-seccion ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .footer-seccion ul li {
-    margin-bottom: 5px;
-  }
-  
-  .footer-seccion a {
-    color: #ffe1e6;
-    text-decoration: none;
-    transition: color 0.2s;
-  }
-  
-  .footer-seccion a:hover {
-    color: #ffffff;
-  }
-  
-  /* Estilos para la sección Sobre Nosotros */
-  .about-us {
-    padding: 40px;
-    background-color: #ffffff;
-    text-align: center;
-  }
-  
-  .about-us-box {
-    background-color: #fbeaec;
-    border-radius: 15px;
-    padding: 40px;
-    max-width: 800px;
-    margin: 0 auto;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .about-us h2 {
-    color: #6c2b3f;
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
-  
-  .about-us p {
-    color: #333;
-    font-size: 1.1rem;
-    line-height: 1.6;
-  }
   
