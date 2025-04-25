@@ -41,25 +41,21 @@ body {
     transition: color 0.3s ease, background-color 0.3s ease, border-radius 0.3s ease;
   }
   
-  .nav a:hover {
-    color: #f50000; /* Color del texto en hover */
-    background-color: rgb(139, 0, 47); /* Color del fondo en hover */
-    border-radius: 5px; /* Bordes redondeados */
-}
   .nav:hover a {
     color: #ffffff; /* o el color que quieras para texto general en hover del nav */
   }
-  
-  .logo {
-     margin-top: 4rem;
-  }
-   
+
+  .nav a:hover {
+    background-color: rgb(139, 0, 47); /* Color del fondo en hover */
+    border-radius: 5px; /* Bordes redondeados */
+}
   
   .logo {
     position: fixed;
     right: 2rem;
     top: 1rem;
     width: 80px;
+    margin-top: 2.5rem;
   }
   
   .banner1 {
