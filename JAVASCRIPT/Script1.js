@@ -8,7 +8,7 @@ window.addEventListener('scroll', () => {
   let scrollPosition = window.scrollY;
 
   // Oscilamos la imagen del plátano en función del desplazamiento
-  let oscillation = Math.sin(scrollPosition / 500) * 400; // Ajustamos el rango de oscilación a 20 grados
+  let oscillation = Math.sin(scrollPosition / 1000) * -400; // Ajustamos el rango de oscilación a 20 grados
 
   // Aplicamos el movimiento de rotación a la imagen del plátano
   platano.style.transform = `translateX(${oscillation}px)`;  // Movimiento horizontal  
