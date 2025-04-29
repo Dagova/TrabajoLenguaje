@@ -116,7 +116,7 @@ body {
     left: 5%; 
   }
   
-  /*BANNER DONUT*/
+  /*BANNER FRUTAS*/
   .bannerfrutas {
     position: relative;
     width: 100%;
@@ -130,18 +130,34 @@ body {
     position: relative;
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
   }
   
   .frutas {
-    width: 62%;
-    height: auto; 
+    position: absolute;         /* Permite posicionar libremente dentro del contenedor */
+    top: -100px;                   /* Sube la imagen (ajusta según sea necesario) */
+    right: -3%;                 /* La empuja más allá del borde derecho */
+    width: 45%;
+    height: auto;
     object-fit: contain;
-    z-index: 1; 
+    z-index: 1;
+    transform: rotate(20deg);    /* Rota ligeramente hacia la derecha */
   }
   
+  .frutas-texto {
+    position: absolute;
+    left: 5%;               /* Alinea a la izquierda */
+    top: 50%;
+    transform: translateY(-50%); /* Centra verticalmente */
+    color: #ffffff;         /* Color del texto, ajusta a gusto */
+    line-height: 1;    
+    z-index: 2;
+  }
+  
+  .frutas-texto p {
+    font-size: 100px;
+    font-weight: bold;
+    margin: 0.5rem 0;       /* Espaciado vertical suave */
+  }
   
 
   h2 {
