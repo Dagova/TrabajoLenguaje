@@ -285,7 +285,8 @@ margin-right: 8vw;
   white-space: nowrap;
   padding-right: 0.5rem; /* espacio entre repeticiones */
   font-size: 1.2rem;
-  color: #3a1f00; /* chocolate, combínalo con tu web */
+  font-weight: bold;
+  color: #5d3a00; 
 }
 
 @keyframes scroll-marquee {

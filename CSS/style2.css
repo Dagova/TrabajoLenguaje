@@ -5,54 +5,47 @@ body {
   }
 
   .nav {
+    font-family: "Inter", sans-serif;
+    width: 100%;
     position: absolute;
     top: 0;
-    width: 100%;
-    z-index: 1000; /* Menor que el logo pero sigue estando por encima del banner */
+    z-index: 1000;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
-    gap: 2rem;
     background: transparent;
     transition: background-color 0.3s ease;
   }
   
   .nav:hover {
-    background-color:  rgb(75, 31, 6);; /* se pone blanco cuando haces hover sobre el nav */
-    color : rgb(255, 255, 255); /* se pone blanco cuando haces hover sobre el nav */  
+    background-color: rgb(75, 31, 6);
+    color: rgb(255, 255, 255);
   }
   
   .nav ul {
     list-style: none;
     display: flex;
     gap: 4rem;
-    margin: 0;
-    padding: 0;
+  
   }
   
   .nav a {
     text-decoration: none;
     color: #5d3a00;
-    font-weight: bolder;
-    font-size: 15px;
     font-weight: 1000;
+    font-size: 15px;
     padding: 0.5rem 1rem;
     transition: color 0.3s ease, background-color 0.3s ease, border-radius 0.3s ease;
   }
   
   .nav a:hover {
-    background-color: rgb(139, 0, 47); /* Color del fondo en hover */
-    border-radius: 5px; /* Bordes redondeados */
-}
-  .nav:hover a {
-    color: #ffffff; /* o el color que quieras para texto general en hover del nav */
+    background-color: rgb(139, 0, 47);
+    border-radius: 5px;
   }
-
-  .nav a:hover {
-    background-color: rgb(139, 0, 47); /* Color del fondo en hover */
-    border-radius: 5px; /* Bordes redondeados */
-}
+  
+  .nav:hover a {
+    color: #ffffff;
+  }
   
 .logo {
   position: fixed;
