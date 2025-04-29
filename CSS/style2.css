@@ -60,7 +60,6 @@ body {
   right: 2rem;
   top: 1rem;
   width: 80px;
-  z-index: 2000; /* Hacemos que el logo esté encima de los demás elementos */
 }
 
   .banner1 {
@@ -217,6 +216,7 @@ body {
   height: 150px;
   right: 2rem;
   top: 1rem;
+  z-index: 3;
 }
 
 .flip-card {
