@@ -166,8 +166,8 @@ h2 {
 .footer {
   background-color: #b25443;
   color: black;
-  padding: 60px 40px;
   font-family: 'Helvetica Neue', sans-serif;
+  padding-bottom: 3vw;
 }
 
 .footer-content {
@@ -180,12 +180,11 @@ h2 {
 }
 
 .newsletter {
-  grid-column: 1 / 2;
-  grid-row: 0 / 1;
-  margin-right: 5vw;
+margin-right: 8vw;
 }
 
 .newsletter h2 {
+  margin-top: 3vw;
   font-size: 48px;
   margin-bottom: 20px;
   font-weight: bold;
