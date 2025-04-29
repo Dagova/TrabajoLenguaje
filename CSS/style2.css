@@ -217,6 +217,119 @@ a{
   transition: color 0.3s ease, background-color 0.3s ease, border-radius 0.3s ease;
 }
 
+.footer {
+  background-color: #b25443;
+  color: black;
+  padding: 60px 40px;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  grid-template-columns: 2fr 1fr 1fr 1fr; /* 4 columnas */
+  grid-template-rows: 2fr; 
+  gap: 2rem;
+  justify-content: center;
+
+}
+
+.newsletter h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.newsletter form {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.newsletter{
+  grid-column: 1 / 2; /* columna 1 */
+  grid-row: 0 / 1; /* ocupa desde la fila 1 hasta la 3 */
+  h2{
+    margin: auto;
+    margin-bottom: 1vw;
+  }
+  margin-right: 5vw;
+}
+
+.newsletter input[type="email"] {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.newsletter button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.checkbox {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.checkbox label a {
+  text-decoration: underline;
+}
+
+.social {
+  margin-top: 40px;
+}
+
+.social h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.social a {
+  margin-right: 10px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 60px;
+  margin-top: 40px;
+}
+
+.column h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.column ul li {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.column ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.column img{
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
   
   
   
