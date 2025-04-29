@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    height: 200%; /* Aumentamos la altura del cuerpo de la página para permitir scroll */
+}
+
+.content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 10em;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 3em;
+}
+
+.paragraph {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    margin: 5em 0;
+}
+
+p{
+    font-size: 5em;
+    line-height: 1.5;
+    color: rgb(139, 0, 47);
+    margin-top: 5em;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.visible {
+    opacity: 1;
+}
+
+.nav {
+    position: absolute; 
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 2rem;
+    background: transparent;
+    transition: background-color 0.3s ease; /* transición para el cambio */
+  }
+  
+  .nav:hover {
+    background-color:  rgb(75, 31, 6);; /* se pone blanco cuando haces hover sobre el nav */
+    color : rgb(255, 255, 255); /* se pone blanco cuando haces hover sobre el nav */  
+  }
+  
+  .nav ul {
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: #5d3a00;
+    font-weight: bolder;
+    font-size: 15px;
+    font-weight: 1000;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease, background-color 0.3s ease, border-radius 0.3s ease;
+  }
+  
+  .nav a:hover {
+    background-color: rgb(139, 0, 47); /* Color del fondo en hover */
+    border-radius: 5px; /* Bordes redondeados */
+}
+  .nav:hover a {
+    color: #ffffff; /* o el color que quieras para texto general en hover del nav */
+  }
+
+  .nav a:hover {
+    background-color: rgb(139, 0, 47); /* Color del fondo en hover */
+    border-radius: 5px; /* Bordes redondeados */
+}
+  
+  .logo {
+    position: fixed;
+    right: 2rem;
+    top: 1rem;
+    width: 80px;
+    margin-top: 2.5rem;
+  }
+
+  .flip-container {
+    position: fixed;
+    perspective: 1000px;
+    width: 150px; /* ajusta según el tamaño del logo */
+    height: 150px;
+    right: 2rem;
+    top: 1rem;
+  }
+  
+  .flip-card {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+  }
+  
+  .flip-container:hover .flip-card {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-front, .flip-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; /* opcional, si quieres que sea redondo */
+    overflow: hidden;
+  }
+  
+  .flip-front {
+    background-color: transparent;
+  }
+  
+  .flip-back {
+    color: #5d3a00;
+    transform: rotateY(180deg);
+    text-align: center;
+    font-size: 1rem;
+    padding-top: 10px;
+  
+  }
+
+
+  a{
+    text-decoration: none;
+   color: #5d3a00;
+   text-decoration: none;
+    color: #5d3a00;
+    font-weight: bolder;
+    font-size: 15px;
+    font-weight: 1000;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease, background-color 0.3s ease, border-radius 0.3s ease;
+  }
+
+  .footer {
+    background-color: #b25443;
+    color: black;
+    padding: 60px 40px;
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: 2fr 1fr 1fr 1fr; /* 4 columnas */
+    grid-template-rows: 2fr; 
+    gap: 2rem;
+    justify-content: center;
+
+  }
+  
+  .newsletter h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .newsletter form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+
+  .newsletter{
+    grid-column: 1 / 2; /* columna 1 */
+    grid-row: 0 / 1; /* ocupa desde la fila 1 hasta la 3 */
+    h2{
+      margin: auto;
+      margin-bottom: 1vw;
+    }
+    margin-right: 5vw;
+  }
+
+  .newsletter input[type="email"] {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .newsletter button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .checkbox {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+  
+  .checkbox label a {
+    text-decoration: underline;
+  }
+  
+  .social {
+    margin-top: 40px;
+  }
+  
+  .social h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .social a {
+    margin-right: 10px;
+  }
+  
+  .footer-links {
+    display: flex;
+    gap: 60px;
+    margin-top: 40px;
+  }
+  
+  .column h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  .column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .column ul li {
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+  
+  .column ul li a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .column img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
