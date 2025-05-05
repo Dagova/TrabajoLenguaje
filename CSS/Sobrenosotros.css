@@ -11,8 +11,8 @@ body {
 }
 
 .content {
-    max-width: 1000px;
-    margin: 0 auto;
+    max-width: 50vw;
+    margin: 5vw auto;
     padding: 20px;
 }
 
@@ -27,14 +27,49 @@ h1 {
     opacity: 0;
     transition: opacity 1s ease-in-out;
     margin: 5em 0;
+    display: flex;
+    align-items: center;
 }
-
-p{
-    font-size: 5em;
+.t1{
+  p{
+    font-size: 4em;
     line-height: 1.5;
     color: rgb(139, 0, 47);
     margin-top: 5em;
+    text-align: left;
+  }
+  img{
+    width: 20vw;
+    height: 20vw;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
 }
+
+.t2{
+  display: flex;
+  align-items: center;
+  p{
+    font-size: 4em;
+    line-height: 1.5;
+    color: rgb(139, 0, 47);
+    margin-top: 5em;
+    text-align: right;
+  }
+  img{
+    width: 20vw;
+    height: 20vw;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+}
+
+
 
 footer {
     background-color: #333;
