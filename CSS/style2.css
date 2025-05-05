@@ -170,7 +170,6 @@ body {
   .chocolates {
     position: absolute;         /* Permite posicionar libremente dentro del contenedor */    
     width: 100%;
-    top: 17px;
     height: auto;
     object-fit: contain;
     z-index: 1;
