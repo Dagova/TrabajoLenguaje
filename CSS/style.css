@@ -283,7 +283,7 @@ margin-right: 8vw;
 
 .marquee-track span {
   white-space: nowrap;
-  padding-right: 0.5rem; /* espacio entre repeticiones */
+  padding-right: 0.5rem; 
   font-size: 1.2rem;
   font-weight: bold;
   color: #5d3a00; 
@@ -297,8 +297,3 @@ margin-right: 8vw;
     transform: translateX(-25%);
   }
 }
-
-
-
-
-
