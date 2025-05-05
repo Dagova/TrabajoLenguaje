@@ -34,7 +34,7 @@ h1 {
   p{
     font-size: 4em;
     line-height: 1.5;
-    color: rgb(139, 0, 47);
+    color: #5d3a00;
     margin-top: 5em;
     text-align: left;
   }
@@ -55,7 +55,7 @@ h1 {
   p{
     font-size: 4em;
     line-height: 1.5;
-    color: rgb(139, 0, 47);
+    color: #5d3a00;
     margin-top: 5em;
     text-align: right;
   }
@@ -200,24 +200,35 @@ footer {
     transition: color 0.3s ease, background-color 0.3s ease, border-radius 0.3s ease;
   }
 
+  svg{
+    margin-bottom: -3.5vw;
+  }
+  
   .footer {
-    background-color: #b25443;
-    color: black;
-    padding: 60px 40px;
+    background-color: #5d3a00;
+    color: white;
     font-family: 'Helvetica Neue', sans-serif;
+    H2{
+      color: white;
+    }
   }
   
   .footer-content {
     display: flex;
     flex-wrap: wrap;
-    grid-template-columns: 2fr 1fr 1fr 1fr; /* 4 columnas */
-    grid-template-rows: 2fr; 
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr;
     gap: 2rem;
     justify-content: center;
-
+    margin-bottom: 1VW;
+  }
+  
+  .newsletter {
+  margin-right: 8vw;
   }
   
   .newsletter h2 {
+    margin-top: 0vw;
     font-size: 48px;
     margin-bottom: 20px;
     font-weight: bold;
@@ -228,21 +239,10 @@ footer {
     flex-direction: column;
   }
   
-
-  .newsletter{
-    grid-column: 1 / 2; /* columna 1 */
-    grid-row: 0 / 1; /* ocupa desde la fila 1 hasta la 3 */
-    h2{
-      margin: auto;
-      margin-bottom: 1vw;
-    }
-    margin-right: 5vw;
-  }
-
   .newsletter input[type="email"] {
     background: transparent;
     border: none;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid white;
     font-size: 16px;
     margin-bottom: 10px;
   }
@@ -280,7 +280,6 @@ footer {
   .footer-links {
     display: flex;
     gap: 60px;
-    margin-top: 40px;
   }
   
   .column h3 {
@@ -301,14 +300,53 @@ footer {
   
   .column ul li a {
     text-decoration: none;
-    color: black;
+    color: white;
   }
-
-  .column img{
+  
+  .column img {
     width: 50px;
     height: 50px;
     object-fit: cover;
     border-radius: 5px;
     cursor: pointer;
     transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .marquee {
+    width: 100%;
+    overflow: hidden;
+    background-color:transparent;
+  }
+  
+  .marquee-track {
+    display: flex;
+    width: max-content;
+    animation: scroll-marquee 15s linear infinite;
+    img{
+      width: 150px; /* Ajusta el tamaño de las imágenes según sea necesario */
+      height: 150px;
+      object-fit: cover;
+      border-radius: 5px;
+      margin-right: 120px; /* Espacio entre imágenes */
+    }
+  }
+   .abajo{
+      background-color: #5d3a00;
+    }
+  .marquee-track span {
+    white-space: nowrap;
+    padding-right: 0.5rem; 
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #5d3a00; 
+   
+  }
+  
+  @keyframes scroll-marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-25%);
+    }
   }

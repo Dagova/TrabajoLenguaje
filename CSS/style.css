@@ -77,7 +77,7 @@ body {
   position: absolute;
   top: 10%;
   right: 100px;
-  height: 80%;
+  height: 90%;
   object-fit: contain;
   pointer-events: none;
   transition: transform 0.1s ease-out;
@@ -134,6 +134,10 @@ body {
   border: 2px solid #fff;
 }
 
+span{
+  background-color: rgb(213, 214, 209);
+}
+
 h2 {
   margin-left: 30px;
   font-size: 2rem;
@@ -163,11 +167,17 @@ h2 {
   transform: scale(1.1);
 }
 
+svg{
+  margin-bottom: -3.5vw;
+}
+
 .footer {
-  background-color: #b25443;
-  color: black;
+  background-color: #5d3a00;
+  color: white;
   font-family: 'Helvetica Neue', sans-serif;
-  padding-bottom: 3vw;
+  H2{
+    color: white;
+  }
 }
 
 .footer-content {
@@ -177,6 +187,7 @@ h2 {
   grid-template-rows: 2fr;
   gap: 2rem;
   justify-content: center;
+  margin-bottom: 1VW;
 }
 
 .newsletter {
@@ -184,7 +195,7 @@ margin-right: 8vw;
 }
 
 .newsletter h2 {
-  margin-top: 3vw;
+  margin-top: 0vw;
   font-size: 48px;
   margin-bottom: 20px;
   font-weight: bold;
@@ -198,7 +209,7 @@ margin-right: 8vw;
 .newsletter input[type="email"] {
   background: transparent;
   border: none;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
   font-size: 16px;
   margin-bottom: 10px;
 }
@@ -236,7 +247,6 @@ margin-right: 8vw;
 .footer-links {
   display: flex;
   gap: 60px;
-  margin-top: 40px;
 }
 
 .column h3 {
@@ -257,7 +267,7 @@ margin-right: 8vw;
 
 .column ul li a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 .column img {
@@ -272,21 +282,31 @@ margin-right: 8vw;
 .marquee {
   width: 100%;
   overflow: hidden;
-  background-color: rgb(213, 214, 209);
+  background-color:transparent;
 }
 
 .marquee-track {
   display: flex;
   width: max-content;
   animation: scroll-marquee 15s linear infinite;
+  img{
+    width: 150px; /* Ajusta el tamaño de las imágenes según sea necesario */
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 120px; /* Espacio entre imágenes */
+  }
 }
-
+ .abajo{
+    background-color: #5d3a00;
+  }
 .marquee-track span {
   white-space: nowrap;
   padding-right: 0.5rem; 
   font-size: 1.2rem;
   font-weight: bold;
   color: #5d3a00; 
+ 
 }
 
 @keyframes scroll-marquee {
@@ -296,4 +316,34 @@ margin-right: 8vw;
   100% {
     transform: translateX(-25%);
   }
+}
+
+/* estilo del carrusel */
+
+.carousel {
+  height: 400px;
+  margin: 40px auto;
+  max-width: 1000px;
+  margin-top: 0;
+  margin-bottom: 40px;
+  
+}
+
+.carousel .carousel-item img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.carousel .carousel-item img:hover {
+  transform: scale(1.05);
+}
+
+h2 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+  text-align: center;
 }
