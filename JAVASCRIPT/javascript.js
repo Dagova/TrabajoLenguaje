@@ -46,4 +46,37 @@ function avanzarCarrusel() {
 
 setInterval(avanzarCarrusel, 3000);
 
+// Carrusel horizontal
+document.querySelectorAll('.carousel-container').forEach(container => {
+  const carousel = container.querySelector('.carousel');
+  const nextBtn = container.querySelector('.next');
+  const prevBtn = container.querySelector('.prev');
+
+  let scrollStep = 220; // ancho + margen
+  let totalItems = carousel.querySelectorAll('a').length / 2;
+
+  let index = 0;
+
+  const scrollCarousel = () => {
+    index++;
+    carousel.scrollBy({ left: scrollStep, behavior: 'smooth' });
+
+    if (index >= totalItems) {
+      setTimeout(() => {
+        carousel.scrollTo({ left: 0, behavior: 'auto' });
+        index = 0;
+      }, 300); // espera a que termine el scroll animado
+    }
+  };
+
+  nextBtn.addEventListener('click', scrollCarousel);
+  prevBtn.addEventListener('click', () => {
+    index = (index - 1 + totalItems) % totalItems;
+    carousel.scrollBy({ left: -scrollStep, behavior: 'smooth' });
+  });
+
+  // Auto-scroll cada 3 segundos
+  setInterval(scrollCarousel, 3000);
+});
+
 

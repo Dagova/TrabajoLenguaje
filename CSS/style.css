@@ -320,30 +320,54 @@ margin-right: 8vw;
 
 /* estilo del carrusel */
 
-.carousel {
-  height: 400px;
-  margin: 40px auto;
-  max-width: 1000px;
-  margin-top: 0;
+.carousel-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
   margin-bottom: 40px;
-  
 }
 
-.carousel .carousel-item img {
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 20px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
+.carousel {
+  display: flex;
+  gap: 20px;
+  overflow: hidden; /* Para que solo se vean 3 */
+  width: 660px; /* 3 imágenes de 200px + márgenes */
+  scroll-behavior: smooth;
 }
 
-.carousel .carousel-item img:hover {
-  transform: scale(1.05);
+.carousel a {
+  flex: 0 0 auto;
 }
 
-h2 {
-  margin-bottom: 10px;
-  font-size: 5rem;
-  text-align: center;
+.carousel a img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.carousel a img:hover {
+  transform: scale(1.1);
+}
+
+button.prev,
+button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  font-size: 2rem;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+button.prev {
+  left: 0;
+}
+
+button.next {
+  right: 0;
 }
