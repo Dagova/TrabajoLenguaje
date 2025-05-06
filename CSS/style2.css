@@ -1,337 +1,171 @@
 body {
+  width: 100%;
   margin: 0;
   font-family: "Inter", sans-serif;
   background-color: #fff8e7;
-  }
+}
 
-  .nav {
-    font-family: "Inter", sans-serif;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    z-index: 1000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: transparent;
-    transition: background-color 0.3s ease;
-  }
-  
-  .nav:hover {
-    background-color: rgb(75, 31, 6);
-    color: rgb(255, 255, 255);
-  }
-  
-  .nav ul {
-    list-style: none;
-    display: flex;
-    gap: 4rem;
-  
-  }
-  
-  .nav a {
-    text-decoration: none;
-    color: #5d3a00;
-    font-weight: 1000;
-    font-size: 15px;
-    padding: 0.5rem 1rem;
-    transition: color 0.3s ease, background-color 0.3s ease, border-radius 0.3s ease;
-  }
-  
-  .nav a:hover {
-    background-color: rgb(139, 0, 47);
-    border-radius: 5px;
-  }
-  
-  .nav:hover a {
-    color: #ffffff;
-  }
-  
+.nav {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.nav:hover {
+  background-color: rgb(75, 31, 6);
+  color: rgb(255, 255, 255);
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 4rem;
+
+}
+
+.nav a {
+  text-decoration: none;
+  color: #5d3a00;
+  font-weight: 1000;
+  font-size: 15px;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease, background-color 0.3s ease, border-radius 0.3s ease;
+}
+
+.nav a:hover {
+  background-color: rgb(139, 0, 47);
+  border-radius: 5px;
+}
+
+.nav:hover a {
+  color: #ffffff;
+}
+
 .logo {
   position: fixed;
   right: 2rem;
   top: 1rem;
   width: 80px;
+  margin-top: 2.5rem;
 }
 
-  .banner1 {
-    width: 100%;
-    height: 85vh;
-    background-color: #fff8e7;
-  }
-
-  /*BANNER DONUT*/
-  .bannerdonnut {
-    position: relative;
-    width: 100%;
-    height: 85vh;
-    background-color: rgb(213, 214, 209);
-    overflow: hidden;
-    z-index: 1; 
-  }
-  
-  .donuts-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-  }
-  
-  .donuts {
-    width: 62%;
-    height: auto; 
-    object-fit: contain;
-    z-index: 1; 
-  }
-  
-  .yum {
-    position: absolute; 
-    width: 90%;
-    z-index: 10; 
-
-  }
-  
-  .yum1 {
-    top: 20%;
-    left: 5%; 
-  }
-  
-  .yum2 {
-    top: 38%;
-    left: 5%; 
-  }
-  
-  .yum3 {
-    top: 56%;
-    left: 5%; 
-  }
-  
-  /*BANNER FRUTAS*/
-  .bannerfrutas {
-    position: relative;
-    width: 100%;
-    height: 85vh;
-    background-color: rgb(213, 214, 209);
-    overflow: hidden;
-    z-index: 1; 
-  }
-  
-  .frutas-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .frutas {
-    position: absolute;         /* Permite posicionar libremente dentro del contenedor */
-    top: -100px;                   /* Sube la imagen (ajusta según sea necesario) */
-    right: -3%;                 /* La empuja más allá del borde derecho */
-    width: 45%;
-    height: auto;
-    object-fit: contain;
-    z-index: 1;
-    transform: rotate(20deg);    /* Rota ligeramente hacia la derecha */
-  }
-  
-  .frutas-texto {
-    position: absolute;
-    left: 5%;               /* Alinea a la izquierda */
-    top: 50%;
-    transform: translateY(-50%); /* Centra verticalmente */
-    color: #ffffff;         /* Color del texto, ajusta a gusto */
-    line-height: 1;    
-    z-index: 2;
-  }
-  
-  .frutas-texto p {
-    font-size: 100px;
-    font-weight: bold;
-    margin: 0.5rem 0;       /* Espaciado vertical suave */
-  }
-
-  /*BANNER CHOCOLATE*/
-  .bannerchocolates {
-    position: relative;
-    width: 100%;
-    height: 85vh;
-    background-color: rgb(232, 230, 228);
-    overflow: hidden;
-    z-index: 1; 
-  }
-  
-  .chocolates-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .chocolates {
-    position: absolute;         /* Permite posicionar libremente dentro del contenedor */    
-    width: 100%;
-    top: 17px;
-    height: auto;
-    object-fit: contain;
-    z-index: 1;
-  }
-  
-
-  h2 {
-    margin-left: 30px;
-    font-size: 2rem;
-    margin-top: 5rem;
-    color: rgb(139, 0, 47); 
-    text-align: center;
-    font-size: 40px;
-  }
-
-  /*Tarjetas de donuts*/
-  .caja {
-    perspective: 1000px;
-    width: 400px;
-    height: 450px;
-  }
-  
-  
-  
-  .tarjeta {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    transform-style: preserve-3d;
-    transition: transform 0.8s;
-  }
-  
-  .caja:hover .tarjeta {
-    transform: rotateY(180deg);
-  }
-  
-  .cara {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    border-radius: 20px;
-    overflow: hidden;
-  }
-  
-  .cara-delante img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .cara-detras {
-    background-color: rgb(139, 0, 47);
-    color: white;
-    transform: rotateY(180deg);
-    font-size: 1rem;
-    text-align: center;
-    padding-top: 10%;
- 
-
-
-    .descripcion {
-      padding-left: 1vw;
-      padding-right: 1vw;
-    }
-  }
-
-  .caja {
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    width: 220px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
-    margin: 20px;
-    object-fit: cover;
-  }
-  
- 
-
-  .caja img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 20px;
-  }
-
-  .items {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    padding: 20rem;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    margin-left: 5rem;
-    justify-content: center;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
-
-  }
-
-  .flip-container {
-  position: fixed;
-  perspective: 1000px;
-  width: 150px; /* ajusta según el tamaño del logo */
-  height: 150px;
-  right: 2rem;
-  top: 1rem;
-  z-index: 3;
-}
-
-.flip-card {
+.banner1 {
   width: 100%;
-  height: 100%;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
+  height: 85vh;
+  background-color: rgb(213, 214, 209);
+  z-index: 0;
   position: relative;
 }
 
-.flip-container:hover .flip-card {
-  transform: rotateY(180deg);
-}
-
-.flip-front, .flip-back {
+.platano {
   position: absolute;
+  rotate: 0deg;
+  left: -100px;
+  height: 110%;
+  object-fit: contain;
+  pointer-events: none;
+  transition: transform 0.1s ease-out;
+}
+
+.drips {
+  position: absolute;
+  top: 10%;
+  right: 10vw;
+  height: 40vw;
+  object-fit: contain;
+  pointer-events: none;
+  transition: transform 0.1s ease-out;
+}
+
+.banner2 {
+  position: relative;
+  height: 100vh;
   width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
+  overflow-y: hidden;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%; /* opcional, si quieres que sea redondo */
-  overflow: hidden;
+  flex-direction: column;
+  scroll-behavior: smooth;
 }
 
-.flip-front {
-  background-color: transparent;
+.banner2 img {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  flex-shrink: 0;
+  position: relative;
 }
 
-.flip-back {
-  color: #5d3a00;
-  transform: rotateY(180deg);
+.selector-vertical {
+  position: absolute;
+  top: 140%;
+  right: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 10;
+  max-height: 80vh;
+  padding: 10px 0;
+  width: 70px;
+}
+
+.selector-vertical img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.selector-vertical img:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.selector-vertical .activo img {
+  border: 2px solid #fff;
+}
+
+span{
+  background-color: rgb(213, 214, 209);
+}
+
+h2 {
+  margin-left: 30px;
+  font-size: 2rem;
+  margin-top: 8rem;
+  color: rgb(139, 0, 47);
   text-align: center;
-  font-size: 1rem;
-  padding-top: 10px;
-
+  font-size: 40px;
 }
 
-a{
-  text-decoration: none;
- color: #5d3a00;
- text-decoration: none;
-  color: #5d3a00;
-  font-weight: bolder;
-  font-size: 15px;
-  font-weight: 1000;
-  padding: 0.5rem 1rem;
-  transition: color 0.3s ease, background-color 0.3s ease, border-radius 0.3s ease;
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 3rem;
+  justify-content: center;
 }
 
+.items img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.items img:hover {
+  transform: scale(1.1);
+}
 
 svg{
   margin-bottom: -3.5vw;
@@ -484,11 +318,32 @@ margin-right: 8vw;
   }
 }
 
-@keyframes scroll-marquee {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-25%);
-  }
+/* estilo del carrusel */
+
+.carousel {
+  height: 400px;
+  margin: 40px auto;
+  max-width: 1000px;
+  margin-top: 0;
+  margin-bottom: 40px;
+  
+}
+
+.carousel .carousel-item img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.carousel .carousel-item img:hover {
+  transform: scale(1.05);
+}
+
+h2 {
+  margin-bottom: 10px;
+  font-size: 5rem;
+  text-align: center;
 }
