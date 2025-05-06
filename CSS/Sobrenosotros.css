@@ -321,7 +321,7 @@ footer {
   .marquee-track {
     display: flex;
     width: max-content;
-    animation: scroll-marquee 15s linear infinite;
+    animation: scroll-marquee 30s linear infinite;
     img{
       width: 150px; /* Ajusta el tamaño de las imágenes según sea necesario */
       height: 150px;
@@ -347,6 +347,6 @@ footer {
       transform: translateX(0);
     }
     100% {
-      transform: translateX(-25%);
+      transform: translateX(-10%);
     }
   }
