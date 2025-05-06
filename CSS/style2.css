@@ -155,7 +155,7 @@ body {
   .bannerchocolates {
     position: relative;
     width: 100%;
-    height: 50vw;
+    height: 85vh;
     background-color: rgb(232, 230, 228);
     overflow: hidden;
     z-index: 1; 
@@ -164,13 +164,13 @@ body {
   .chocolates-container {
     position: relative;
     width: 100%;
-    ;
+    height: 100%;
   }
   
   .chocolates {
     position: absolute;         /* Permite posicionar libremente dentro del contenedor */    
     width: 100%;
-    top: 2vw;
+    top: 17px;
     height: auto;
     object-fit: contain;
     z-index: 1;
@@ -260,18 +260,17 @@ body {
   }
 
   .items {
-    
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
     padding: 20rem;
     padding-top: 5rem;
     padding-bottom: 5rem;
-    margin-left: 15rem;
+    margin-left: 5rem;
     justify-content: center;
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
-    
+
   }
 
   .flip-container {
@@ -317,9 +316,8 @@ body {
   transform: rotateY(180deg);
   text-align: center;
   font-size: 1rem;
-  a{
-    margin-top: -1vw;
-  }
+  padding-top: 10px;
+
 }
 
 a{
@@ -397,7 +395,6 @@ margin-right: 8vw;
 
 .checkbox label a {
   text-decoration: underline;
-    color: white;
 }
 
 .social {
@@ -483,8 +480,15 @@ margin-right: 8vw;
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-10%);
+    transform: translateX(-25%);
   }
 }
 
-
+@keyframes scroll-marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-25%);
+  }
+}

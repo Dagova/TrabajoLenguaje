@@ -229,7 +229,6 @@ margin-right: 8vw;
 
 .checkbox label a {
   text-decoration: underline;
-    color: white;
 }
 
 .social {
@@ -289,7 +288,7 @@ margin-right: 8vw;
 .marquee-track {
   display: flex;
   width: max-content;
-  animation: scroll-marquee 15Ss linear infinite;
+  animation: scroll-marquee 15s linear infinite;
   img{
     width: 150px; /* Ajusta el tamaño de las imágenes según sea necesario */
     height: 150px;
@@ -298,11 +297,9 @@ margin-right: 8vw;
     margin-right: 120px; /* Espacio entre imágenes */
   }
 }
-
-.abajo{
+ .abajo{
     background-color: #5d3a00;
-} 
-
+  }
 .marquee-track span {
   white-space: nowrap;
   padding-right: 0.5rem; 
@@ -317,7 +314,7 @@ margin-right: 8vw;
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-10%);
+    transform: translateX(-25%);
   }
 }
 
